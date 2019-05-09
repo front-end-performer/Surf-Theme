@@ -1,0 +1,51 @@
+@import "../mixins";
+
+.menu__mobile-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: @default-bg-color;
+  z-index: 23;
+  visibility: hidden;
+  opacity: 0;
+  .menu__mobile-content {
+    padding: 0;
+    .position-center();
+    .menu_mobile-link {
+      padding: 25px;
+      -webkit-transition: color 250ms ease;
+      transition: color 250ms ease;
+      font-family: @default-font-family;
+      color:  #474747;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      &:hover {
+        color: @default-color-hover;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .social-links-mobile {
+    visibility: hidden;
+    opacity: 0;
+    @media screen and (max-width: 767px) {
+      position: absolute;
+      z-index: 22;
+      visibility: visible;
+      opacity: 1;
+      bottom: 10%;
+      width: 100%;
+      &-icon {
+        padding: 25px;
+        .tumble:hover {
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+}

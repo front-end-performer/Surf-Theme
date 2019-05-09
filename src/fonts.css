@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    src:  url('/assets/fonts/PlayfairDisplay-Black.ttf') format('ttf'),
+    url('/assets/fonts/PlayfairDisplay-BlackItalic.ttf') format('ttf'),
+    url('/assets/fonts/PlayfairDisplay-Bold.ttf') format('ttf'),
+    url('/assets/fonts/PlayfairDisplay-BoldItalic.ttf') format('ttf'),
+    url('/assets/fonts/PlayfairDisplay-Italic.ttf') format('ttf'),
+    url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('ttf');
+}
